@@ -1,0 +1,66 @@
+<html>
+<head>
+<title> Responsive Grid</title>
+<style>
+
+.grid {
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+border: 2px dashed black;
+background: yellow;
+}
+
+.box{
+text-align: center;
+height: 150px;
+width: 150px;
+border: 2px solid black;
+background: lightblue;
+border-radius: 20px;
+}
+
+h3{
+text-align: center;
+}
+
+@media(max-width: 600px){
+.grid{grid-template-columns: 1fr;}
+}
+</style>
+</head>
+<body>
+<h3>Responsive Grid</h3>
+<div class="grid">
+	<div class="box">
+	<p><b>Your Name</b></p>
+	<p>Address</p>
+	<p>Class</p>
+	<p>Section</p>
+	</div>
+	
+	<div class="box">
+	<p><b>Your Name</b></p>
+	<p>Address</p>
+	<p>Class</p>
+	<p class="4">Section</p>
+	</div>
+
+	<div class="box">
+	<p><b>Your Name</b></p>
+	<p>Address</p>
+	<p>Class</p>
+	<p>Section</p>
+	</div>
+
+	<div class="box">
+	<p><b>Your Name</b></p>
+	<p>Address</p>
+	<p>Class</p>
+	<p>Section</p>
+	</div>
+
+</div>
+</body>
+</html>
